@@ -1,0 +1,145 @@
+.features {
+  margin-top: 10%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  text-transform: lowercase;
+
+  .column {
+    width: 32.7%;
+  }
+
+  .features-item {
+    margin-top: 5%;
+    background-color: lighten(@seaweed, 65%);
+    border-radius: 2px;
+
+    p {
+      font-size: 1.7rem;
+      line-height: 1.8;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-bottom: 7%;
+      text-transform: uppercase;
+    }
+
+    div {
+      padding: 13%;
+    }
+  }
+
+  .text-alerts {
+    height: 35%;
+    position: relative;
+    background-color: @beetroot;
+    color: white;
+
+    .content {
+      padding-top: 10%;
+      z-index: 1;
+    }
+
+    .cover {
+      .cover-images();
+    }
+  }
+
+  .add-multiple-plants {
+    height: 55%;
+    position: relative;
+    background-color: @teal;
+    color:white;
+
+    .content {
+      padding-top: 25%;
+      z-index: 1;
+    }
+
+    .cover {
+      .cover-images();
+    }
+  }
+
+  .family-members {
+    height: 55%;
+    position: relative;
+    background-color: @pimiento;
+    color: white;
+
+    .content {
+      padding-top: 25%;
+      z-index: 1;
+    }
+
+    .cover {
+      .cover-images();
+    }
+  }
+
+  .suggested-times {
+    height: 35%;
+    position: relative;
+    background-color: @pumpkin;
+    color: white;
+
+    .content {
+      padding-top: 10%;
+      z-index: 1;
+    }
+
+    .cover {
+      .cover-images();
+    }
+  }
+
+  .community {
+    height: 35%;
+    position: relative;
+    background-color: @aubergine;
+    color: white;
+
+    .content {
+      padding-top: 10%;
+      z-index: 1;
+    }
+
+    .cover {
+      .cover-images();
+    }
+  }
+
+  .canvas-message {
+    height: 55%;
+    background-color: @seaweed;
+
+    p {
+      font-size: 2.6rem;
+      line-height: 1.8;
+      color: white;
+
+      span {
+        color: @teal;
+      }
+    }
+
+    div {
+      padding-top: 29%;
+    }
+  }
+
+  img {
+      height: 35%;
+      width: 35%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+}
