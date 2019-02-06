@@ -7,12 +7,16 @@
     <title>Water My Plants</title>
     <link href="css/index.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <script src="./js/index.js" async></script>
+    <script src="./js/anchors.js" async></script>
+    <script src="./js/carousel.js" async></script>
+    <script src="./js/accordian.js" async></script>
   </head>
   <body>
+
     <div class="home-container">
+<!--Header--> 
       <header>
         <h2><a href="index.html">Water My Plants 🌱</a></h2>
         <nav>
@@ -20,17 +24,20 @@
           <a class="menu-item">Testimonials</a>
           <a class="menu-item">Blog</a>
           <a href="../faq.html" class="menu-item">FAQs</a>
-          <a href="../signup.html" class="menu-item join">Join</a>
+          <a class="menu-item join">Join</a>
           <a class="menu-item mobile-menu-extras">Facebook</a>
           <a class="menu-item mobile-menu-extras">Instagram</a>
           <a class="menu-item mobile-menu-extras">Buy me a coffee</a>
           <a class="menu-item mobile-menu-extras">Terms</a>
+          <a class="menu-item-holder mobile-menu-extras">Menu</a>
         </nav>
-	  </header>
+    </header>
+
+<!--Testimonials--> 
 	  </section>
       <section class="testimonials">
         <div class="testimonial-container">
-          <div class="testimonial-item testimonial-1">
+          <div class="testimonial-item testimonial-1" data-tab="0">
             <div class="text-container">
               <p>
                 "It takes away all of the stress associated with
@@ -40,7 +47,7 @@
               <h3>Jesse Armitage | London 🇬🇧</h3>
             </div>
           </div>
-          <div class="testimonial-item testimonial-2">
+          <div class="testimonial-item testimonial-2 hide" data-tab="1">
             <div class="text-container">
               <p>
                 "I've been so happy with WMP that I've got my two sons, three
@@ -49,14 +56,14 @@
               <h3>Simone Barnes | Lyon 🇫🇷</h3>
             </div>
           </div>
-          <div class="testimonial-item testimonial-3 hide">
+          <div class="testimonial-item testimonial-3 hide" data-tab="2">
             <p>
               "Now that both myself and my wife get alerts from Water My Plants,
               we can easily decide whose doing what, and when."
             </p>
             <h3>Maria Tensey | Madrid 🇪🇸</h3>
           </div>
-          <div class="testimonial-item testimonial-4 hide">
+          <div class="testimonial-item testimonial-4 hide" data-tab="3">
             <p>
               "If you're not already using Water My Plants, you should almost
               certainly consider it. Even as a dedicated and experienced
@@ -65,8 +72,12 @@
             </p>
             <h3>Tate Stevens | Chesterfield 🇬🇧</h3>
           </div>
+        <div class="left-button"><img src="img/LeftButton.svg"/></div>
+        <div class="right-button"><img src="img/RightButton.svg"/></div>
         </div>
       </section>
+
+<!--Press coverage--> 
       <section class="press-coverage">
         <h2>As seen in...</h2>
         <div class="logo-container">
@@ -91,8 +102,10 @@
         </div>
       </section>
 
+<!--Product features--> 
+<!--Column 1--> 
       <section class="features">
-        <div class="column">
+        <div class="column desktop">
           <div class="text-alerts features-item">
             <div class="cover"><img src="img/notification.svg" /></div>
             <div class="content">
@@ -113,7 +126,8 @@
           </div>
         </div>
 
-        <div class="column">
+<!--Column 2--> 
+        <div class="column desktop">
           <div class="family-members features-item">
             <div class="cover"><img src="img/house.svg" /></div>
             <div class="content">
@@ -134,7 +148,8 @@
           </div>
         </div>
 
-        <div class="column">
+<!--Column 3--> 
+        <div class="column desktop">
           <div class="community features-item">
             <div class="cover"><img src="img/comment.svg" /></div>
             <div class="content">
@@ -150,8 +165,44 @@
             </div>
           </div>
         </div>
-      </section>
 
+<!--Mobile Column--> 
+ <div class="mobile-features-container">
+  <div class="text-alerts-m features-item">
+    <h3>Alerts!</h3>
+      <p>
+        Get a text alert every time your plants need watering 🌱
+      </p>
+  </div>
+  <div class="add-multiple-plants-m features-item">
+    <h3>Track them all</h3>
+      <p>
+        Add multiple plants and schedules for each of them 🕑
+      </p>
+  </div>
+  <div class="family-members-m features-item">
+    <h3>Share the load</h3>
+      <p>
+        Add mutliple family members to text alerts 📱
+      </p>
+  </div>
+  <div class="suggested-times-m features-item">
+    <h3>Listen up</h3>
+      <p>
+        Get access to schedules used by top gardeners 🌹
+      </p>
+  </div>
+  <div class="community-m features-item">
+    <h3>Jump in</h3>
+      <p>
+        Built by gardeners, for gardeners. Join our community ✌️
+      </p>
+  </div>
+ </div>
+
+</section>
+
+<!--Hero and CTA--> 
       <section class="hero">
         <div class="hero-image"><img src="img/PalmTree.png"/></div>
         <div class="hero-text">
@@ -164,9 +215,11 @@
           <button>Blog</button>
         </div>
       </section>
+
+<!--Footer-->       
       <footer>
-        <p>© 2019 WaterMyPlants LTD.</p>
-        <p><a>Terms</a></p>
+        <p>©WaterMyPlants</p>
+        <a><p>Terms</p></a>
       </footer>
     </div>
   </body>

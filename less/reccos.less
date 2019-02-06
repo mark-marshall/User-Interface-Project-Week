@@ -1,7 +1,12 @@
 .press-coverage {
-  margin-top: 5%;
+  margin: 8% 0% 10% 0%;
   height: 200px;
   background-color: white;
+
+  @media @tablet {
+    margin-top: 11%;
+    margin-bottom: 15%;
+  }
 
   h2 {
     font-size: 3.2rem;
@@ -11,6 +16,11 @@
     text-transform: lowercase;
     padding-left: 1%;
     margin-bottom: 1.5%;
+
+    @media @tablet {
+      padding-left: 3%;
+    }
+
   }
 
   .logo-container {
@@ -18,18 +28,25 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: lighten(@pumpkin, 37%);
+    background-color: lighten(@teal,25%);
     height: 20%;
     border-radius: 2px;
+
+    @media @tablet {
+      height: 40%;
+      width: 92%;
+      margin: auto;
+    }
 
     .logo {
       padding: 5%;
       width: 20%;
       margin: 1%;
       position: relative;
+      border-right: 2px solid lighten(@teal, 30%);
 
       img {
-        height: 65%;
+        height: 70%;
         width: 50%;
         position: absolute;
         margin: auto;
@@ -39,8 +56,39 @@
         bottom: 0;
       }
     }
-    .guardian, .wired, .product-hunt {
-        position: relative;
+
+    .gardeners-world {
+      @media @tablet {
+        display: none;
+      }
+    }
+
+    .wired {
+      @media @tablet {
+        height: 70%;
+        width: 100%;
+      }
+    }
+
+    .bloomberg {
+      @media @tablet {
+        height: 70%;
+        width: 100%;
+      }
+    }
+
+    .guardian {
+      @media @tablet {
+        height: 30%;
+        width: 100%;
+      }
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .logo:last-child{
+      border-right: none;
     }
   }
 }

@@ -6,8 +6,12 @@ header {
   justify-content: space-between;
   z-index: 10;
   background-color: white;
-  border-bottom: 2px solid lighten(@teal, 20%);
+  border-bottom: 2px solid @seaweed;
 
+  @media @phone, @tablet {
+  border-bottom: none;
+  padding: 5% 1% 5% 4%;
+}
   a {
     text-decoration: none;
     text-transform: uppercase;
@@ -16,6 +20,10 @@ header {
 
   h2 {
     font-size: 2.5rem;
+
+    @media @phone {
+      font-size: 2.2rem;
+    }
 
     a {
       color: @seaweed;
@@ -28,8 +36,28 @@ header {
     display: flex;
     justify-content: space-around;
 
+    @media @tablet {
+      justify-content: flex-end;
+      padding-right: 3%;
+      width: 30%
+    }
+
     .mobile-menu-extras {
       display: none;
+    }
+
+    .menu-item {
+      @media @tablet {
+        display: none;
+    }
+    }
+
+    .menu-item-holder {
+      @media @phone, @tablet {
+        display: block;
+        text-align: right;
+        font-size: 1.5rem;
+    }
     }
 
     a {

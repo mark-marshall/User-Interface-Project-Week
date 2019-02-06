@@ -1,0 +1,121 @@
+.help-container {
+  .help-intro {
+    height: 575px;
+    background-color: lighten(@teal, 10%);
+    border-radius: 2px;
+
+    @media @tablet {
+      margin-bottom: 2%;
+    }
+
+    @media @phone {
+      margin-bottom: 5%;
+      height: 585px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 10rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: darken(@teal, 25%);
+      padding-top: 10%;
+
+      @media @phone {
+        margin-top: 5%;
+      }
+    }
+
+    .team-container {
+      padding-top: 5%;
+      display: flex;
+      justify-content: space-between;
+      width: 55%;
+      margin: auto;
+
+      @media @tablet {
+        width: 65%;
+      }
+
+      @media @phone {
+        width: 85%;
+        margin-top: 4.5%;
+      }
+
+      img {
+        width: 20%;
+        height: 20%;
+      }
+    }
+
+    p {
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      color: darken(@seaweed, 15%);
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 2.2;
+      width: 50%;
+      margin: auto;
+
+      @media @tablet {
+        width: 70%;
+        font-size: 1.8rem;
+      }
+
+      @media @phone {
+        width: 85%;
+        margin-top: 5%;
+      }
+    }
+  }
+
+  .questions {
+    margin-bottom: 8%;
+    padding: 1%;
+
+    h3 {
+      font-size: 2.2rem;
+      color: darken(@seaweed, 15%);
+      font-weight: bold;
+      line-height: 1.4;
+      padding: 7% 1%;
+      cursor: pointer;
+      border-bottom: 1px dashed lighten(@seaweed, 40%);
+
+      @media @tablet {
+        font-size: 1.6rem;
+        padding: 7% 4%;
+      }
+    }
+
+    p {
+      padding: 3% 1%;
+      font-size: 1.8rem;
+      color: black;
+      line-height: 1.8;
+
+      @media @tablet {
+        padding: 4% 4%;
+        font-size: 1.7rem;
+      }
+    }
+    .answers {
+      display: none;
+      background-color: lighten(@teal, 39%);
+      border-radius: 2px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .show {
+      display: block;
+    }
+  }
+}
+
+
+
