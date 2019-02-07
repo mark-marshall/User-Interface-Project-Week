@@ -13,10 +13,10 @@
     <title>FAQ - Water My Plants</title>
     <script src="./js/index.js" async></script>
     <script src="./js/accordian.js" async></script>
+    <script src="./js/mobmenu.js" async></script>
   </head>
   <body>
     <div class="help-container">
-
       <header>
         <h2><a href="index.html">Water My Plants 🌱</a></h2>
         <nav>
@@ -25,11 +25,22 @@
           <a class="menu-item">Blog</a>
           <a href="../faq.html" class="menu-item">FAQs</a>
           <a class="menu-item join">Join</a>
-          <a class="menu-item mobile-menu-extras">Facebook</a>
-          <a class="menu-item mobile-menu-extras">Instagram</a>
-          <a class="menu-item mobile-menu-extras">Buy me a coffee</a>
-          <a class="menu-item mobile-menu-extras">Terms</a>
           <a class="menu-item-holder mobile-menu-extras">Menu</a>
+          <div class="mobile-menu">
+            <a class="mobile-menu-item close">Close</a>
+            <a class="mobile-menu-item featury">Features</a>
+            <a class="mobile-menu-item testimonial">Testimonials</a>
+            <a class="mobile-menu-item blog">Blog</a>
+            <a href="../faq.html" class="mobile-menu-item faqq"
+              >Frequently Asked</a
+            >
+            <a class="mobile-menu-item join">Join</a>
+            <a class="mobile-menu-item instagram small-menu">Instagram</a>
+            <a class="mobile-menu-item facebook small-menu">Facebook</a>
+            <a class="mobile-menu-item twitter small-menu">Twitter</a>
+            <a class="mobile-menu-item terms small-menu">Terms</a>
+            <a class="mobile-menu-item privacy small-menu priv">Privacy Policy</a>
+          </div>
         </nav>
       </header>
 
@@ -42,12 +53,13 @@
           <img src="img/Lucy.png" />
         </div>
         <p>
-          Scroll down to see frequently asked questions or send us a message and
-          we'll get back to you right away
+          Scroll down to see frequently asked questions or send us a
+          <a href="mailto:mark.marshallgp@gmail.com">message</a> and we'll get
+          back to you right away
         </p>
       </section>
       <section class="questions">
-        <div class="panel">
+        <div class="panel" data-tab="0">
           <h3>What is Water My Plants?</h3>
           <p class="answers">
             Water My Plants is a web application that helps you manage and
@@ -56,7 +68,7 @@
             alert you via text when it is time to get watering.
           </p>
         </div>
-        <div class="panel">
+        <div class="panel" data-tab="1">
           <h3>How much does Water My Plants cost?</h3>
           <p class="answers">
             Water My Plants is completely free of charge, built by gardeners for
@@ -64,7 +76,7 @@
             continue to improve the usefullness of our app.
           </p>
         </div>
-        <div class="panel">
+        <div class="panel" data-tab="2">
           <h3>Can I use Water My Plants for my business?</h3>
           <p class="answers">
             Yes, although we would encourage you to test it extensively for your
@@ -72,19 +84,22 @@
             terms and conditions.
           </p>
         </div>
-        <div class="panel">
+        <div class="panel" data-tab="3">
           <h3>I want to help build Water My Plants, who should I speak to?</h3>
           <p class="answers">
             We'd love to get you involved. If you're a gardener and have green
             tips for our blog, a developer with an itch to build, or just a
-            regular user with some ideas to push our app along, get in touch <a href="mailto:mark.marshallgp@gmail.com">here</a>.
+            regular user with some ideas to push our app along, get in touch
+            <a href="mailto:mark.marshallgp@gmail.com">here</a>.
           </p>
         </div>
-        <div class="panel">
+        <div class="panel" data-tab="4">
           <h3>I need to speak with customer support</h3>
           <p class="answers">
             Sure! As this a part-time gig, we respond to emails on evenings and
-            weekends. Contact us <a href="mailto:mark.marshallgp@gmail.com">here</a> and we'll get back to you as soon as we can.
+            weekends. Contact us
+            <a href="mailto:mark.marshallgp@gmail.com">here</a> and we'll get
+            back to you as soon as we can.
           </p>
         </div>
       </section>

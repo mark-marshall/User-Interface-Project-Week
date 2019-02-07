@@ -36,7 +36,7 @@
       }
 
       p {
-        color: black;
+        color: @seaweed;
         font-size: 1.9rem;
         line-height: 1.8;
         padding: 2% 0%;
@@ -48,8 +48,9 @@
       }
     }
 
-    .show-car {
+    .show-testimonial {
       display:block;
+      animation: fadeintestimonial 0.3s;
     }
 
     img {
@@ -71,5 +72,35 @@
       right: 2%;
       top: 42%;
     }
+
+    .testimonial-2 {
+      background-color: @seaweed;
+      h3, p {
+        color: white;
+      }
+    }
+
+    .testimonial-3 {
+      background-color: @offwhite;
+      h3, p {
+        color: @seaweed;
+      }
+    }
+
+    .testimonial-4 {
+      background-color: @seaweed;
+      h3, p {
+        color: white;
+      }
+    }
+  }
+}
+
+@keyframes fadeintestimonial {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

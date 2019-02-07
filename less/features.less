@@ -7,7 +7,6 @@
   align-content: flex-start;
   text-transform: lowercase;
 
-
   @media @tablet {
     margin-top: 20%;
     height: 600px;
@@ -21,7 +20,7 @@
 
   .desktop {
     @media @phone {
-      display:none;
+      display: none;
     }
   }
 
@@ -33,7 +32,7 @@
       align-items: center;
 
       .features-item {
-        height: 20%;
+        height: 30%;
         opacity: 0.9;
 
         p {
@@ -50,16 +49,28 @@
         }
       }
 
-      .text-alerts-m,
-      .family-members-m,
       .community-m {
-        background-color: offwhite;
-        color: darken(@seaweed, 10%);
+        background-color: darken(@teal,10%);
+        color: white;
       }
 
-      .add-multiple-plants-m,
       .suggested-times-m {
-        background-color: lighten(@seaweed, 35%);
+        background-color: @beetroot;
+        color: white;
+      }
+
+      .family-members-m {
+        background-color: @pumpkin;
+        color: white
+      }
+
+      .add-multiple-plants-m {
+        background-color: @pimiento;
+        color: white;
+      }
+
+      .text-alerts-m {
+        background-color: lighten(@seaweed, 10%);
         color: white;
       }
     }
@@ -79,7 +90,7 @@
       line-height: 1.8;
 
       @media @tablet {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
       }
     }
 
@@ -114,6 +125,10 @@
 
     .cover {
       .cover-images();
+    }
+
+    img {
+      animation: rotation 3s infinite linear;
     }
   }
 
@@ -214,5 +229,38 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+}
+
+@keyframes rotation {
+  2% {
+    transform: rotate(20deg);
+  }
+  4% {
+    transform: rotate(-20deg);
+  }
+  6% {
+    transform: rotate(16deg);
+  }
+  8% {
+    transform: rotate(-16deg);
+  }
+  10% {
+    transform: rotate(12deg);
+  }
+  12% {
+    transform: rotate(-14deg);
+  }
+  14% {
+    transform: rotate(8deg);
+  }
+  16% {
+    transform: rotate(-10deg);
+  }
+  18% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
