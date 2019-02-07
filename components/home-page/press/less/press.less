@@ -20,7 +20,6 @@
     @media @tablet {
       padding-left: 3%;
     }
-
   }
 
   .logo-container {
@@ -28,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: lighten(@teal,25%);
+    background-color: lighten(@teal, 25%);
     height: 20%;
     border-radius: 2px;
 
@@ -46,7 +45,7 @@
       border-right: 2px solid lighten(@teal, 30%);
 
       img {
-        height: 70%;
+        height: 60%;
         width: 50%;
         position: absolute;
         margin: auto;
@@ -54,10 +53,16 @@
         left: 0;
         right: 0;
         bottom: 0;
+
+        &:hover {
+          transform: scale(1.05);
+          animation: grow 0.5s;
+        }
       }
     }
 
     .gardeners-world {
+      height: 70%;
       @media @tablet {
         display: none;
       }
@@ -87,8 +92,18 @@
       }
     }
 
-    .logo:last-child{
+    .logo:last-child {
       border-right: none;
     }
+  }
+}
+
+@keyframes grow {
+  0% 
+  {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
   }
 }

@@ -1,19 +1,7 @@
 /* Imports */
-.cover-images {
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 1;
-  cursor: pointer;
-}
-.cover-images:hover {
-  opacity: 0;
-}
+/* Colors */
+/* Fonts */
+/* Media */
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
@@ -149,6 +137,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* Post reset global starts here */
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
@@ -159,6 +148,21 @@ html {
 .signup-container {
   max-width: 1000px;
   margin: 0 auto;
+}
+.cover-images {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+}
+.cover-images:hover {
+  opacity: 0;
 }
 header {
   position: sticky;
@@ -227,9 +231,39 @@ header nav a {
   color: black;
 }
 header nav a:hover {
-  border-bottom: 2px solid #EB4E47;
+  border-bottom: 1px solid #EB4E47;
 }
-header nav .mobile-menu {
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2.5% 2% 2.5% 0%;
+  border-top: 2px solid #2F6C67;
+}
+@media (max-width: 800px) {
+  footer {
+    border-top: none;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  footer {
+    padding-right: 5%;
+  }
+}
+footer p,
+footer a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: black;
+  padding: 0% 2%;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  footer p,
+  footer a {
+    padding: 0% 1%;
+  }
+}
+.mobile-menu {
   display: none;
   flex-direction: column;
   align-items: flex-end;
@@ -241,61 +275,65 @@ header nav .mobile-menu {
   z-index: 50;
   background-color: white;
 }
-header nav .mobile-menu .mobile-menu-item {
+.mobile-menu .mobile-menu-item {
   padding-right: 5%;
   text-transform: capitalize;
   font-size: 2.3rem;
   font-weight: lighter;
   line-height: 1.8;
 }
-header nav .mobile-menu .join {
+.mobile-menu .join {
   padding-bottom: 6%;
 }
-header nav .mobile-menu .close {
+.mobile-menu .close {
   text-transform: uppercase;
   font-size: 1.4rem;
   padding-bottom: 6.5%;
   padding-top: 12%;
 }
-header nav .mobile-menu .small-menu {
+.mobile-menu .close:hover {
+  color: #EB4E47;
+  font-weight: bold;
+}
+.mobile-menu .small-menu {
   font-size: 1.5rem;
   line-height: 1.6;
 }
-header nav .mobile-menu a:hover {
+.mobile-menu a:hover {
   border: none;
   color: #5DC8BD;
 }
-header nav .mobile-menu .featury {
+.mobile-menu .featury {
   animation: fadein-one 20s;
 }
-header nav .mobile-menu .testimonial {
+.mobile-menu .testimonial {
   animation: fadein-two 20s;
 }
-header nav .mobile-menu .blog {
+.mobile-menu .blog {
   animation: fadein-three 20s;
 }
-header nav .mobile-menu .faqq {
+.mobile-menu .faqq {
   animation: fadein-four 20s;
 }
-header nav .mobile-menu .join {
+.mobile-menu .join {
   animation: fadein-five 20s;
 }
-header nav .mobile-menu .instagram {
+.mobile-menu .instagram {
   animation: fadein-six 20s;
 }
-header nav .mobile-menu .facebook {
+.mobile-menu .facebook {
   animation: fadein-seven 20s;
 }
-header nav .mobile-menu .twitter {
+.mobile-menu .twitter {
   animation: fadein-eight 20s;
 }
-header nav .mobile-menu .terms {
+.mobile-menu .terms {
   animation: fadein-nine 20s;
 }
-header nav .mobile-menu .privacy {
+.mobile-menu .privacy {
   animation: fadein-ten 20s;
 }
-header nav .menu-open {
+.menu-open {
   display: flex;
 }
 @keyframes fadein-one {
@@ -462,7 +500,7 @@ header nav .menu-open {
   border: none;
   background-color: #f6f6f6;
   color: #2F6C67;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   width: 40%;
   cursor: pointer;
@@ -532,51 +570,6 @@ header nav .menu-open {
     display: none;
   }
 }
-.features .mobile-features-container {
-  display: none;
-}
-@media (max-width: 500px) {
-  .features .mobile-features-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .features .mobile-features-container .features-item {
-    height: 30%;
-    opacity: 0.9;
-  }
-  .features .mobile-features-container .features-item p {
-    font-size: 2.1rem;
-    padding: 8%;
-    line-height: 2;
-    text-transform: none;
-  }
-  .features .mobile-features-container .features-item h3 {
-    padding: 8%;
-    padding-bottom: 0%;
-    font-size: 2.8rem;
-  }
-  .features .mobile-features-container .community-m {
-    background-color: #3db5a8;
-    color: white;
-  }
-  .features .mobile-features-container .suggested-times-m {
-    background-color: #CF2C51;
-    color: white;
-  }
-  .features .mobile-features-container .family-members-m {
-    background-color: #ED8733;
-    color: white;
-  }
-  .features .mobile-features-container .add-multiple-plants-m {
-    background-color: #EB4E47;
-    color: white;
-  }
-  .features .mobile-features-container .text-alerts-m {
-    background-color: #3e9089;
-    color: white;
-  }
-}
 .features .column {
   width: 32.7%;
 }
@@ -611,13 +604,13 @@ header nav .menu-open {
   padding: 13%;
 }
 .features .text-alerts {
-  height: 35%;
+  height: 55%;
   position: relative;
   background-color: #CF2C51;
   color: white;
 }
 .features .text-alerts .content {
-  padding-top: 10%;
+  padding-top: 25%;
   z-index: 1;
 }
 .features .text-alerts .cover {
@@ -664,13 +657,13 @@ header nav .menu-open {
   opacity: 0;
 }
 .features .family-members {
-  height: 55%;
+  height: 35%;
   position: relative;
   background-color: #EB4E47;
   color: white;
 }
 .features .family-members .content {
-  padding-top: 25%;
+  padding-top: 10%;
   z-index: 1;
 }
 .features .family-members .cover {
@@ -769,6 +762,51 @@ header nav .menu-open {
   right: 0;
   bottom: 0;
 }
+.features .mobile-features-container {
+  display: none;
+}
+@media (max-width: 500px) {
+  .features .mobile-features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features .mobile-features-container .features-item {
+    height: 30%;
+    opacity: 0.9;
+  }
+  .features .mobile-features-container .features-item p {
+    font-size: 2.1rem;
+    padding: 8%;
+    line-height: 2;
+    text-transform: none;
+  }
+  .features .mobile-features-container .features-item h3 {
+    padding: 8%;
+    padding-bottom: 0%;
+    font-size: 2.8rem;
+  }
+  .features .mobile-features-container .community-m {
+    background-color: #3db5a8;
+    color: white;
+  }
+  .features .mobile-features-container .suggested-times-m {
+    background-color: #CF2C51;
+    color: white;
+  }
+  .features .mobile-features-container .family-members-m {
+    background-color: #ED8733;
+    color: white;
+  }
+  .features .mobile-features-container .add-multiple-plants-m {
+    background-color: #EB4E47;
+    color: white;
+  }
+  .features .mobile-features-container .text-alerts-m {
+    background-color: #3e9089;
+    color: white;
+  }
+}
 @keyframes rotation {
   2% {
     transform: rotate(20deg);
@@ -850,7 +888,7 @@ header nav .menu-open {
   border-right: 2px solid #cfefec;
 }
 .press-coverage .logo-container .logo img {
-  height: 70%;
+  height: 60%;
   width: 50%;
   position: absolute;
   margin: auto;
@@ -858,6 +896,13 @@ header nav .menu-open {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.press-coverage .logo-container .logo img:hover {
+  transform: scale(1.05);
+  animation: grow 0.5s;
+}
+.press-coverage .logo-container .gardeners-world {
+  height: 70%;
 }
 @media (max-width: 800px) {
   .press-coverage .logo-container .gardeners-world {
@@ -889,6 +934,14 @@ header nav .menu-open {
 }
 .press-coverage .logo-container .logo:last-child {
   border-right: none;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
 .testimonials {
   padding-bottom: 0%;
@@ -1067,74 +1120,79 @@ header nav .menu-open {
 }
 .help-container .help-intro a {
   text-decoration: none;
-  color: #2a7c73;
+  color: #CF2C51;
 }
-.help-container .questions {
+.questions {
   margin-bottom: 8%;
   padding: 1%;
+  transition: all 0.6s ease-out;
 }
-.help-container .questions h3 {
+.questions .headering {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #96d1cc;
+  align-items: baseline;
+  cursor: pointer;
+}
+.questions .headering h3 {
   font-size: 2.2rem;
-  color: #183734;
+  line-height: 1.3;
   font-weight: bold;
-  line-height: 1.4;
   padding: 7% 1%;
   cursor: pointer;
-  border-bottom: 1px dashed #96d1cc;
 }
 @media (max-width: 800px) {
-  .help-container .questions h3 {
+  .questions .headering h3 {
     font-size: 1.6rem;
     padding: 7% 4%;
   }
 }
-.help-container .questions p {
+.questions .headering p {
+  font-size: 2.4rem;
+  font-family: 'Arial', sans-serif;
+}
+.questions .answers {
+  display: none;
+  background-color: #f6f6f6;
+  border-radius: 2px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s ease-out;
+}
+.questions .answers a {
+  text-decoration: none;
+  color: #CF2C51;
+}
+.questions p {
   padding: 3% 2%;
   font-size: 1.8rem;
-  color: #2F6C67;
+  color: #275a56;
   line-height: 1.8;
 }
 @media (max-width: 800px) {
-  .help-container .questions p {
+  .questions p {
     padding: 4% 4%;
     font-size: 1.7rem;
   }
 }
-.help-container .questions .answers {
-  display: none;
-  background-color: #f6f6f6;
-  border-radius: 2px;
-}
-.help-container .questions .answers a {
-  text-decoration: none;
-  color: #2F6C67;
-}
-.help-container .questions .show {
+.questions .show {
   display: block;
 }
-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 2.5% 2% 2.5% 0%;
-  border-top: 2px solid #2F6C67;
+.questions .rotate {
+  transform: rotate(135deg);
+  color: #EB4E47;
+  animation: turnitout 1.5s;
 }
-@media (max-width: 500px) {
-  footer {
-    border-top: none;
-    padding-right: 5%;
+@keyframes turnitout {
+  0% {
+    color: #183734;
   }
-}
-footer p,
-footer a {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: black;
-  padding: 0% 2%;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  footer p,
-  footer a {
-    padding: 0% 1%;
+  50% {
+    color: #EB4E47;
+    transform: rotate(45deg);
+  }
+  100% {
+    color: #EB4E47;
+    transform: rotate(45deg);
   }
 }
